@@ -1,9 +1,17 @@
-contagem_regressiva = int(input('Informe um número inteiro para começar a contagem regressiva: '))
+import os 
+import time
 
-print('\nContagem regressiva: \n')
+try:
+    contagem_regressiva = int(input('Informe um número inteiro para começar a   contagem regressiva: '))
 
-while contagem_regressiva >= 0:
-    print(f'{contagem_regressiva} ...')
-    contagem_regressiva -= 1
+    os.system('cls')
+
+    print('\nContagem regressiva: \n')
+
+    while contagem_regressiva >= 0:
+        print(f'{contagem_regressiva} ...')
+        contagem_regressiva -= 1
+except Exception as e:
+    print(f'Não foi possível realizar a contagem: {e}.')
 
 

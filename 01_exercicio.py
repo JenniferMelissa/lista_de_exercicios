@@ -1,5 +1,7 @@
-numero = input('Informe um número: ')
+try:
+    numero = float(input('Informe um número: '))
 
-numero_float = float
-
-print(f'Número informado: {numero}. Tipo de dado: {numero_float}')
+    print(numero)
+    print(type(numero))
+except Exception as e:
+    print('Não foi possível realizar a operação.')

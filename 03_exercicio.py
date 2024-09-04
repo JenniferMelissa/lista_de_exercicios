@@ -9,6 +9,7 @@ try:
     informar_numero = int(input('Informe o número que deseja verificar: '))
     resultado = verificar_impar_par(informar_numero)
     print(resultado)
-except:
-    print('Não foi possível verificar o número informado.')
+except Exception as e:
+    print(f'Não foi possível verificar o número informado: {e}')
+
 

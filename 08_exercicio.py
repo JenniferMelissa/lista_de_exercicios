@@ -15,5 +15,10 @@ while True:
             novo_num = int(input('Informe o número a ser adicionado: '))
             numeros.append(novo_num)
             print(f'Número {novo_num} adicionado com sucesso.')
+            continue
         case 2:
             print(f'Média da lista: {media(numeros)}')
+            break
+        case _:
+            print('Opção não encontrada.')
+            continue

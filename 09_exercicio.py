@@ -21,7 +21,7 @@ while True:
             case 1:
                 nome_evento =input('Informe o nome do evento: ')
                 evento.append(nome_evento)
-                nova_classificacao = input('Informe classificação do filme: ')
+                nova_classificacao = input('Informe classificação do evento: ')
                 classificacao.append(nova_classificacao)
                 print(f'Evento: {nome_evento} Classificação: {nova_classificacao}')
                 continue
@@ -42,7 +42,7 @@ while True:
 
                     if idade >= int(classif_evento):
                         print('\n')
-                        print(f'Ingresso impresso no dia: {data}')
+                        print(f'Bilhete do evento no dia: {data}')
                         print(f'Pagante: {nome}.')
                         print(f'Evento: {evento_escolhido}.')
                         break
